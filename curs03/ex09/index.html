@@ -16,6 +16,58 @@
 </head>
 
 <body>
+  <form>
+    <label for="name">* Nume</label>
+
+    <input
+      type="text"
+      name="name"
+      id="name"
+      minlength="5"
+      maxlength="30"
+      placeholder="Nume"
+      required
+    > <br>
+
+    <label for="surname">* Prenume</label>
+
+    <input
+      type="text"
+      name="surname"
+      id="surname"
+      minlength="5"
+      maxlength="30"
+      placeholder="Prenume"
+      required
+    > <br>
+
+    <label for="message">* Mesaj</label>
+
+    <textarea
+      name="message"
+      id="message"
+      cols="30"
+      rows="4"
+      placeholder="Mesaj"
+      required
+    ></textarea> <br>
+
+    <label for="details">Detalii</label>
+
+    <textarea
+      name="details"
+      id="details"
+      cols="30"
+      rows="8"
+      placeholder="Detalii"
+    ></textarea> <br> <br>
+
+    <button
+      type="submit"
+      name="submit"
+    >Submit</button>
+    <br>
+  </form>
   <div
     class="pixeltab-host"
     id="html01-03-09"
