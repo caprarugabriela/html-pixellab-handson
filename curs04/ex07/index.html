@@ -16,8 +16,43 @@
 </head>
 
 <body>
+  <p>
+    <a
+      href="https://www.google.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Home*"
+    >Home *</a>
 
+    <a
+      href="https://www.google.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Place Order *"
+    ><b> Place Order *</b></a>
 
+    <a
+      href="https://www.google.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Customer Service *"
+    > Customer Service *</a>
+
+    <a
+      href="https://www.google.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      title=" Contact *"
+    > Contact *</a>
+  </p>
+
+  <h1>Place Order</h1>
+
+  <p>This is the <b>guest checkout</b>, thank you for your order!</p>
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione quis vitae culpa obcaecati eveniet dolorum,
+    molestiae nam ipsam deleniti architecto voluptas. Adipisci hic cupiditate et tenetur velit est nostrum libero.</p>
+
+  <h2>Products</h2>
   <p>
     <img
       src="images/mouse.jpg"
@@ -36,26 +71,330 @@
   </p>
   <hr>
 
+  <p>
+    <img
+      src="images/extension_chord.jpg"
+      alt="extension_chord"
+    >
 
-  <!-- insert code -->
+    <a
+      href="/"
+      title="Sterge"
+    >Sterge</a>
+
+    <a
+      href="/"
+      title="Editeaza"
+    >Editeaza</a>
+  </p>
+  <hr>
+
+  <p>
+    <img
+      src="images/phone.jpg"
+      alt="phone"
+    >
+
+    <a
+      href="/"
+      title="Sterge"
+    >Sterge</a>
+
+    <a
+      href="/"
+      title="Editeaza"
+    >Editeaza</a>
+  </p>
+  <hr>
+
+  <h2>Order Now</h2>
+
+  <p>On our website <i>no account is needed</i>.</p>
+
+  <ol>
+    <li>First we need some info about yourself. <b>Don’t forget to provide a phone.</b></li>
+    <li>Then we need your <i>real</i> shipping address.</li>
+    <li>Finally, your credit card information.</li>
+  </ol>
+
   <form>
     <fieldset>
       <legend>Personal information</legend>
+      <label>Title:</label>
+      <label for="male">Mr</label>
+      <input
+        type="radio"
+        name="gender"
+        id="male"
+        value="male"
+        checked
+      >
+      <label for="female">Ms</label>
+      <input
+        type="radio"
+        name="gender"
+        id="female"
+        value="female"
+      >
+
+      <label for="na">Unspecified</label>
+      <input
+        type="radio"
+        name="gender"
+        id="na"
+        value="na"
+      > <br>
+
+      <label for="name">*Name:</label>
+
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Name"
+        required
+      > <br> <br>
+
+      <label for="surname">*Surname:</label>
+      <input
+        type="text"
+        name="surname"
+        id="surname"
+        placeholder="Surname"
+        required
+      > <br> <br>
+
+      <label for="email">*Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Email"
+        required
+      > <br> <br>
+
+      <label for="phone">*Phone:</label>
+      <input
+        type="tel"
+        name="phone"
+        id="phone"
+        placeholder="Phone"
+        required
+      > <br>
+
     </fieldset>
 
     <fieldset>
       <legend>Address</legend>
+      <label for="address-name">*Name:</label>
+      <input
+        type="text"
+        name="address-name"
+        id="address-name"
+        placeholder="Name"
+        required
+      > <br> <br>
+
+      <label for="address-surname">*Surname:</label>
+      <input
+        type="text"
+        name="address-surname"
+        id="address-surname"
+        placeholder="Surname"
+        required
+      > <br> <br>
+
+      <label for="address-phone">*Phone:</label>
+      <input
+        type="tel"
+        name="address-phone"
+        id="address-phone"
+        placeholder="Phone"
+        required
+      > <br> <br>
+
+      <label for="address1">*Address Line 1:</label>
+      <input
+        type="text"
+        name="address1"
+        id="address1"
+        placeholder="Address Line 1"
+        required
+      > <br> <br>
+
+      <label for="address2">Address Line 2:</label>
+      <input
+        type="text"
+        name="address2"
+        id="address2"
+        placeholder="Address Line 2"
+      > <br> <br>
+
+      <label for="city">*City:</label>
+      <input
+        type="text"
+        name="city"
+        id="city"
+        placeholder="City"
+        required
+      > <br> <br>
+
+      <label for="state">*State:</label>
+      <select
+        name="state"
+        id="state"
+        required
+      >
+        <option value="">--State--</option>
+        <option value="">newYork</option>
+        <option value="">vermont</option>
+        <option value="">miami</option>
+      </select> <br> <br>
+
+      <label for="postcode">*Postcode:</label>
+      <input
+        type="text"
+        name="postcode"
+        id="postcode"
+        placeholder="Postcode"
+        required
+      > <br> <br>
     </fieldset>
 
     <fieldset>
       <legend>Card Information</legend>
+      <label for="card-number">*Card number:</label>
+      <input
+        type="text"
+        name="card-number"
+        id="card-number"
+        placeholder="Card Number"
+        required
+      > <br> <br>
+
+      <label for="card-name">*Name on card</label>
+      <input
+        type="text"
+        name="card-name"
+        id="card-name"
+        placeholder="Name on card"
+        required
+      > <br> <br>
+
+      <label for="card-expiry-month">*Expiry Month</label>
+      <select
+        name="card-expiry-month"
+        id="card-expiry-month"
+        required
+      >
+        <option value="">January</option>
+        <option value="">February</option>
+        <option value="">March</option>
+        <option value="">April</option>
+      </select>
+
+      <label for="card-expiry-year">*Expiry Year</label>
+      <select
+        name="card-expiry-year"
+        id="card-expiry-year"
+        required
+      >
+        <option value="">2019</option>
+        <option value="">2018</option>
+        <option value="">2017</option>
+        <option value="">2016</option>
+      </select> <br> <br>
+
+      <label for="card-cvv">*CVV:</label>
+      <input
+        type="text"
+        name="card-cvv"
+        id="card-cvv"
+        placeholder="CVV"
+        required
+      > <br>
+      <p><i>We do not store credit card information!</i></p>
     </fieldset>
 
     <fieldset>
       <legend>Form Controls</legend>
-    </fieldset>
 
+      <input
+        type="checkbox"
+        name="terms"
+        id="terms"
+        required
+      >
+      <label for="terms">*You are required to agree to the <a
+          href="https://www.google.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="terms and conditions"
+        >terms and conditions</a> <br> <br>
+
+        <input
+          type="checkbox"
+          name="subscribe"
+          id="subscribe"
+          required
+        >
+        <label for="subscribe">Can we send you emails?</label> <br><br>
+
+        <input
+          type="checkbox"
+          name="gdpr-consent"
+          id="gdpr-consent"
+          required
+        >
+        <label for="gdpr-consent">GDPR generic consent?</label> <br><br>
+
+        <button
+          type="submit"
+          name="submit"
+          id="submit"
+        >PLACE ORDER</button>
+
+        <button
+          type="reset"
+          name="reset"
+          id="reset"
+        >Reset</button>
+    </fieldset>
   </form>
+
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga nihil maiores, officiis quo error sit labore
+    recusandae enim dicta, voluptates totam consectetur consequatur adipisci laboriosam cum. Molestias rerum eveniet
+    eum.</p>
+
+  <p>
+    <a
+      href="https://www.google.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Home*"
+    >Home *</a>
+
+    <a
+      href="https://www.google.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Place Order *"
+    ><b> Place Order *</b></a>
+
+    <a
+      href="https://www.google.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      title="Customer Service *"
+    > Customer Service *</a>
+
+    <a
+      href="https://www.google.com"
+      target="_blank"
+      rel="noopener noreferrer"
+      title=" Contact *"
+    > Contact *</a>
+  </p>
   <div
     class="pixeltab-host"
     id="html01-04-07"
