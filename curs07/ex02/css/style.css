@@ -1,7 +1,9 @@
-/* insert code */
+a {
+  color: green;
+}
 
 i {
-  color:red;
+  color: red;
 }
 
 .line {
@@ -16,10 +18,29 @@ p .line {
   color: gray;
 }
 
+b {
+  color: purple;
+}
+
+/* help here Coloreaza albastru elementele cu clasa line din elementele cu clasa odd
+ */
+.odd line {
+  color: blue;
+}
+
 .odd i {
   text-decoration: underline;
 }
 
-b {
-  color:purple;
+.even b {
+  text-decoration: underline;
+}
+
+a[href^="http://"]
+{
+  color: red;
+}
+
+a[href$='.com'] {
+  color: black;
 }
