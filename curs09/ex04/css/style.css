@@ -28,10 +28,18 @@
   transform: rotate(-30deg);
 }
 
-/* insert code */
+.box-green {
+  transform: translate(25px, 100px);
+}
 
 .box-purple {
   transform: translate(100px, 0) rotate(50deg);
 }
 
-/* insert code */
+.box-brown {
+  transform: skew(10deg, 10deg) translate(-10px, -5px);
+}
+
+.box-yellow {
+  transform: scale(1.2) rotate(-15deg);
+}

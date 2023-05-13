@@ -53,3 +53,9 @@
   z-index: 1;
   text-align: center;
 }
+
+.sub {
+  position: relative;
+  font-size: 12px;
+  bottom: -4px;
+}
