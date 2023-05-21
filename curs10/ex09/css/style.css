@@ -6,10 +6,10 @@
   padding: 5px;
 }
 
-p.para {
+#container p {
   font-size: 25px;
   font-style: italic;
-  color: violet;
+  color: purple;
 }
 
 /* add code here */
@@ -28,5 +28,5 @@ p {
 
 .para {
   text-decoration: none;
-  color: blueviolet;
+  color: purple;
 }
