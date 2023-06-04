@@ -127,7 +127,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 /* fonts */
+
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-MediumItalic.woff2') format('woff2'),
@@ -136,6 +138,7 @@ table {
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Thin.woff2') format('woff2'),
@@ -144,6 +147,7 @@ table {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
@@ -152,6 +156,7 @@ table {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-BoldItalic.woff2') format('woff2'),
@@ -168,6 +173,7 @@ table {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Black.woff2') format('woff2'),
@@ -176,6 +182,7 @@ table {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-BlackItalic.woff2') format('woff2'),
@@ -184,6 +191,7 @@ table {
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Light.woff2') format('woff2'),
@@ -192,6 +200,7 @@ table {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Italic.woff2') format('woff2'),
@@ -200,6 +209,7 @@ table {
   font-style: italic;
   font-display: swap;
 }
+
 @font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-ThinItalic.woff2') format('woff2'),
@@ -224,7 +234,9 @@ table {
   font-style: normal;
   font-display: swap;
 }
+
 /* fonts */
+
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -326,6 +338,23 @@ a {
   color: #fff;
 }
 
+.nav-secondary li {
+  display: inline-flex;
+  margin: 0 4px;
+}
+
+.nav-secondary a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 12px 24px;
+  display: inline-block;
+}
+
+.nav-secondary a:hover {
+  color: #ff6b6b;
+}
+
 /* header */
 
 /* footer */
@@ -340,7 +369,7 @@ a {
 }
 .footer-menu {
   display: flex;
-  gap: 60px;
+  gap: 30px;
   margin-bottom: 40px;
 }
 .footer-menu ul {
