@@ -426,6 +426,32 @@ a {
   position: relative;
 }
 
+.banner-main h1 {
+  font-size: 75px;
+  font-weight: 700;
+}
+
+.banner-main h2 {
+  font-size: 42px;
+  font-weight: 300;
+  margin: 20px 0 44px 0;
+}
+
+.banner-cta {
+  border: 2px solid #ff6b6b;
+  border-radius: 50px;
+  padding: 24px 40px;
+  margin: 0px 100px 0px 100px;
+  color: #ff6b6b;
+  font-size: 20px;
+  text-transform: uppercase;
+  transition: background-color 0.2s linear, color 0.2s linear;
+}
+
+.banner-cta:hover {
+  background-color: #ff6b6b;
+  color: #fff;
+}
 .banner-main .banner-copy {
   position: absolute;
   left: 50px;
@@ -487,6 +513,14 @@ a {
   aspect-ratio: 1;
   justify-content: center;
   align-items: center;
+}
+
+.home-store-locator h1 {
+  margin-bottom: 48px;
+}
+
+.home-store-locator p {
+  text-align: center;
 }
 
 .home-payment ul {
