@@ -1,0 +1,596 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* fonts */
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('PlayfairDisplay-BlackItalic.woff2') format('woff2'),
+    url('PlayfairDisplay-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+    url('PlayfairDisplay-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('PlayfairDisplay-Black.woff2') format('woff2'),
+    url('PlayfairDisplay-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('PlayfairDisplay-Bold.woff2') format('woff2'),
+    url('PlayfairDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('PlayfairDisplay-ExtraBold.woff2') format('woff2'),
+    url('PlayfairDisplay-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('PlayfairDisplay-Regular.woff2') format('woff2'),
+    url('PlayfairDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('PlayfairDisplay-SemiBold.woff2') format('woff2'),
+    url('PlayfairDisplay-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('PlayfairDisplay-MediumItalic.woff2') format('woff2'),
+    url('PlayfairDisplay-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('PlayfairDisplay-SemiBoldItalic.woff2') format('woff2'),
+    url('PlayfairDisplay-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('PlayfairDisplay-Italic.woff2') format('woff2'),
+    url('PlayfairDisplay-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('PlayfairDisplay-ExtraBoldItalic.woff2') format('woff2'),
+    url('PlayfairDisplay-ExtraBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('PlayfairDisplay-Medium.woff2') format('woff2'),
+    url('PlayfairDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('PlayfairDisplay-Regular.woff2') format('woff2'),
+    url('PlayfairDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('PlayfairDisplay-Italic.woff2') format('woff2'),
+    url('PlayfairDisplay-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-LightItalic.woff2') format('woff2'),
+    url('Roboto-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Black.woff2') format('woff2'),
+    url('Roboto-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-BoldItalic.woff2') format('woff2'),
+    url('Roboto-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Medium.woff2') format('woff2'),
+    url('Roboto-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-MediumItalic.woff2') format('woff2'),
+    url('Roboto-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-BlackItalic.woff2') format('woff2'),
+    url('Roboto-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Italic.woff2') format('woff2'),
+    url('Roboto-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Julius Sans One';
+  src: url('JuliusSansOne-Regular.woff2') format('woff2'),
+    url('JuliusSansOne-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Bold.woff2') format('woff2'),
+    url('Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Light.woff2') format('woff2'),
+    url('Roboto-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Regular.woff2') format('woff2'),
+    url('Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-Thin.woff2') format('woff2'),
+    url('Roboto-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('Roboto-ThinItalic.woff2') format('woff2'),
+    url('Roboto-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+/* /.fonts */
+
+/* body */
+body {
+  font-family: 'Playfair Display', 'Roboto', 'sans serif';
+  font-size: 19px;
+  color: #2b2b2b;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.banner-header {
+  background: #000 url(images/banner.png) no-repeat center center / cover;
+  height: 497px;
+  padding-top: 30px;
+}
+
+.banner-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-connect ul {
+  display: flex;
+  justify-content: space-between;
+  color: #e8e8e8;
+  padding: 16px 0;
+  gap: 16px;
+}
+
+.header-controls ul {
+  display: flex;
+  justify-content: space-between;
+  color: #2b2b2b;
+  padding: 16px 0;
+  gap: 16px;
+}
+
+.header-search {
+  flex-direction: row;
+  display: flex;
+}
+
+.header-search-btn {
+  background: none;
+  border: none;
+  color: #2b2b2b;
+  position: absolute;
+  padding-top: 3px;
+}
+
+.header-search-input {
+  text-align: center;
+}
+
+.banner-nav {
+  background: #2b2b2b;
+  color: #e8e8e8;
+  margin-bottom: 20px;
+}
+
+.banner-nav ul {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 16px 0;
+}
+.banner-nav a:hover {
+  text-decoration: underline;
+}
+
+.content-main {
+  color: #292929;
+}
+
+.content-main > section > header {
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 35px;
+  color: #292929;
+}
+
+.content-main > section > header > h1 {
+  padding-top: 30px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.favorite i.fa-regular {
+  display: inline;
+  position: absolute;
+  padding-left: 100px;
+  padding-top: 20px;
+}
+
+.catalog-preview .product-tiles {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  gap: 30px;
+}
+
+.catalog-preview .product-tile-title {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.catalog-preview .product-tile-pricing {
+  margin-bottom: 70px;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  color: #292929;
+  margin-bottom: 150px;
+}
+
+.home-content-copy h1 {
+  font-size: 44px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.home-content picture {
+  width: 45%;
+}
+
+.home-content-copy {
+  margin-left: 140px;
+}
+
+.home-content-copy p {
+  font-family: 'Roboto', 'sans serif';
+  font-size: 30px;
+  text-align: justify;
+  font-weight: 400;
+  line-height: 43px;
+  letter-spacing: 0.33px;
+}
+
+.home-content-copy p:last-child {
+  margin-top: 40px;
+}
+
+.content-main > section > header > h1:last-child {
+  text-transform: uppercase;
+}
+
+.catalog-preview .catalog-ctas {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.btn {
+  text-decoration: none;
+  font-size: 22px;
+  border: 2px solid #292929;
+  padding: 10px 16px;
+}
+
+.footer {
+  background: #e8e8e8;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-nav ul {
+  display: inline-block;
+  width: 400px;
+}
+
+.footer-nav ul:last-child {
+  padding-left: 105px;
+}
+
+.footer-nav ul li {
+  display: inline-block;
+  width: 300px;
+  line-height: 20px;
+}
+
+.footer-newsletter {
+  display: block;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.form-input {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-social ul {
+  display: flex;
+  gap: 20px;
+}
