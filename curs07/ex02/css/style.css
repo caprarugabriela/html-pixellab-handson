@@ -24,7 +24,7 @@ b {
 
 /* help here Coloreaza albastru elementele cu clasa line din elementele cu clasa odd
  */
-.odd line {
+.odd .line {
   color: blue;
 }
 
