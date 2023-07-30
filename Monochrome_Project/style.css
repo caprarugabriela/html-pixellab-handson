@@ -380,7 +380,7 @@ table {
 
 /* body */
 body {
-  font-family: 'Playfair Display', 'Roboto', 'sans serif';
+  font-family: 'Playfair Display', 'sans-serif';
   font-size: 19px;
   color: #2b2b2b;
 }
@@ -390,29 +390,36 @@ a {
   text-decoration: none;
 }
 
+/* * containerul are nevoie pentru mc de un max-width de 1356px -- done
+eu aici credeam ca trebuie luat width-ul intregii pagini, but i got it now  */
 .container {
   margin: 0 auto;
   width: 100%;
-  max-width: 1920px;
+  max-width: 1356px;
 }
-
-.banner-header {
+/* * pentru ca bannerul exista doar pe homepage nu putem folosi clasa banner-header,
+pentru ca ne incurcam colegii, header e mai ptrovita -- done si in html*/
+.header-secondary {
   background: #000 url(images/banner.png) no-repeat center center / cover;
   height: 497px;
   padding-top: 30px;
 }
+/* * pentru header cu -inner si cu header-secondary
+te voi ruga sa consulti pdful pentru semantica de acolo --- done */
 
-.banner-header-inner {
+/* * paddingul va veni pe header-secondary-inner (care are flex --- done */
+.header-secondary-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 16px 0;
 }
 
+/* * header-controls ul nu are nevoie de padding --done */
 .header-connect ul {
   display: flex;
   justify-content: space-between;
   color: #e8e8e8;
-  padding: 16px 0;
   gap: 16px;
 }
 
@@ -420,7 +427,6 @@ a {
   display: flex;
   justify-content: space-between;
   color: #2b2b2b;
-  padding: 16px 0;
   gap: 16px;
 }
 
@@ -441,38 +447,40 @@ a {
   text-align: center;
 }
 
-.banner-nav {
+/* aici am redenumit clasele in functie de pdf */
+.header-primary {
   background: #2b2b2b;
   color: #e8e8e8;
   margin-bottom: 20px;
 }
 
-.banner-nav ul {
+.header-primary ul {
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
   font-size: 20px;
   padding: 16px 0;
 }
-.banner-nav a:hover {
+.header-primary a:hover {
   text-decoration: underline;
 }
-
-.content-main {
+/* * home-catalog-preview sau catalog-preview (cum alegi) au nevoie de bordura si padding, bordura nu poate fi pe h1,
+petnru ca daca avem o sectiune care nu are acel heeader + heading -- done */
+.home-catalog-preview {
   color: #292929;
+  border-top: 1px solid #e8e8e8;
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
-.content-main > section > header {
+/* * headinguril nu sunt uppercase -- done */
+.main > section > header > h1 {
   font-weight: 700;
   text-align: center;
   margin-bottom: 50px;
   font-size: 35px;
   color: #292929;
-}
-
-.content-main > section > header > h1 {
-  padding-top: 30px;
-  border-top: 1px solid #e8e8e8;
+  text-transform: none;
 }
 
 .favorite i.fa-regular {
@@ -481,8 +489,15 @@ a {
   padding-left: 100px;
   padding-top: 20px;
 }
+/* * pentru ca product tile images sa nu mai iasa din grid, le trebuie un width: 100%; poate si un display block “
+ */
 
-.catalog-preview .product-tiles {
+.product-tile-image {
+  display: block;
+  width: 100%;
+}
+
+.home-catalog-preview .product-tiles {
   display: flex;
   justify-content: space-between;
   text-transform: uppercase;
@@ -491,42 +506,35 @@ a {
   gap: 30px;
 }
 
-.catalog-preview .product-tile-title {
+.home-catalog-preview .product-tile-title {
   margin-top: 20px;
-  margin-bottom: 20px;
 }
 
-.catalog-preview .product-tile-pricing {
-  margin-bottom: 70px;
-}
-
+/* * hia sa corectam stackul de font, pentru ca pe body exista playfir care serif si roboto care  sans serif si defaultul e trecut sans serif,
+deci un stack potrivit ar fi cel cu playfir plus default = serif -- HELPQ */
 .home-content {
+  font-family: 'Roboto';
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 140px;
   color: #292929;
   margin-bottom: 150px;
 }
 
-.home-content-copy h1 {
+.home-content-copy header {
   font-size: 44px;
-  font-weight: 700;
+  font-weight: 600;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .home-content picture {
-  width: 45%;
-}
-
-.home-content-copy {
-  margin-left: 140px;
+  width: 666px;
 }
 
 .home-content-copy p {
-  font-family: 'Roboto', 'sans serif';
-  font-size: 30px;
+  font-size: 22px;
   text-align: justify;
-  font-weight: 400;
   line-height: 43px;
   letter-spacing: 0.33px;
 }
@@ -539,10 +547,12 @@ a {
   text-transform: uppercase;
 }
 
-.catalog-preview .catalog-ctas {
+.catalog-ctas {
   display: flex;
   justify-content: center;
-  margin-bottom: 30px;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
 }
 
 .btn {
@@ -563,19 +573,20 @@ a {
   justify-content: space-between;
 }
 
+/*  in footer-contact, si ancora de email customer care trebuie sa fie intr-un li
+ si in tot footerul ar trebui sa fie un spatiu intre liuri -- done*/
+.footer-inner li {
+  margin-bottom: 10px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 .footer-nav ul {
-  display: inline-block;
-  width: 400px;
-}
-
-.footer-nav ul:last-child {
-  padding-left: 105px;
-}
-
-.footer-nav ul li {
-  display: inline-block;
-  width: 300px;
-  line-height: 20px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .footer-newsletter {
@@ -588,6 +599,15 @@ a {
   display: block;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+/* * butonul de submit nu arata ca in design
+(+bonus points pt un pointer pe el) -- done*/
+.form-btn {
+  text-transform: uppercase;
+  display: block;
+  margin-top: 10px;
+  cursor: pointer;
 }
 
 .footer-social ul {

@@ -34,8 +34,8 @@
 </head>
 
 <body>
-  <header class="banner-header">
-    <div class="banner-header-inner container">
+  <header class="header-secondary">
+    <div class="header-secondary-inner container">
       <section class="header-connect">
         <ul>
           <li>
@@ -149,672 +149,722 @@
     </div>
   </header>
 
+  <header class="header-primary">
+    <div class="header-primary container">
+      <ul>
+        <li>
+          <a href="/">New Arrivals</a>
+        </li>
+
+        <li>
+          <a
+            href="/"
+            title="Brands"
+          >Brands</a>
+        </li>
+
+        <li>
+          <a
+            href="/"
+            title="Men's"
+          >Men's</a>
+        </li>
+
+        <li>
+          <a
+            href="/"
+            title="Women's"
+          >Women's</a>
+        </li>
+
+        <li>
+          <a
+            href="/"
+            title="Accesories"
+          >Accesories</a>
+        </li>
+
+        <li>
+          <a
+            href="/"
+            title="Lookbook"
+          >Lookbook</a>
+        </li>
+
+      </ul>
+    </div>
+  </header>
   <!-- ./header -->
 
-  <main class="content">
-    <header class="banner-nav">
-      <nav class="header-nav container">
-        <ul>
-          <li>
-            <a href="/">New Arrivals</a>
-          </li>
+  <!--  este suficient content-main pe elementul main si driect sectiunile:
+    2xsection.catalog-preview 1xsection.home-content si 2xsection.catalog-preview -- done (am scos div-ul)-->
+  <main class="main container">
+    <section class="home-catalog-preview">
+      <header>
+        <h1>New Stuff</h1>
+      </header>
 
-          <li>
-            <a
-              href="/"
-              title="Brands"
-            >Brands</a>
-          </li>
+      <!-- * la prodcut tile avem un footer in headre (care nu isi are locul)
+        si nu avem nevoie de product-tile-controls pentru ca nu avem in desgin -- done -->
+      <ul class="product-tiles">
+        <li>
+          <article class="product-tile">
+            <header class="product-tile-header">
+              <a
+                href="/"
+                class="favorite"
+                title="favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
 
-          <li>
-            <a
-              href="/"
-              title="Men's"
-            >Men's</a>
-          </li>
-
-          <li>
-            <a
-              href="/"
-              title="Women's"
-            >Women's</a>
-          </li>
-
-          <li>
-            <a
-              href="/"
-              title="Accesories"
-            >Accesories</a>
-          </li>
-
-          <li>
-            <a
-              href="/"
-              title="Lookbook"
-            >Lookbook</a>
-          </li>
-
-        </ul>
-      </nav>
-    </header>
-
-    <div class="content-main container">
-      <section class="catalog-preview">
-        <header>
-          <h1>New Stuff</h1>
-        </header>
-
-        <ul class="product-tiles">
-          <li>
-            <article class="product-tile">
-              <header class="product-tile-header">
-                <footer class="product-tile-controls">
-                  <a
-                    href="/"
-                    class="favorite"
-                    title="favorite"
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </footer>
-                <!-- ./product-tile-controls -->
-
-                <picture class="product-tile-image">
+              <!-- * in elementul picture, ne trebuie si ancora care imbraca imaginea si ne duce pe pagina deprodus altaturi
+                dar nu in ancora este si ancora de wishlist pozitionata absolut (nu i-ul) -- done -->
+              <picture class="product-tile-image">
+                <a
+                  href="/"
+                  class="product-page"
+                  title="product-page"
+                >
                   <img
                     src="images/Monochrome watch 01.png"
                     alt="Monochrome"
                   >
-                </picture>
-                <!-- product-image -->
+                </a>
 
-                <h1 class="product-tile-title">
-                  Monochrome</a>
-                </h1>
-                <!-- product-title -->
+              </picture>
+              <!-- product-image -->
 
-                <section class="product-tile-pricing">
-                  <span class="product-price">$425</span>
-                </section>
-                <!-- ./product-tile-pricing -->
-            </article>
-          </li>
+              <h1 class="product-tile-title">
+                Monochrome</a>
+              </h1>
+              <!-- product-title -->
 
-          <li>
-            <article class="product-tile">
-              <header class="product-tile-header">
-                <footer class="product-tile-controls">
-                  <a
-                    href="/"
-                    class="favorite"
-                    title="favorite"
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </footer>
-                <!-- ./product-tile-controls -->
+              <section class="product-tile-pricing">
+                <span class="product-price">$425</span>
+              </section>
+              <!-- ./product-tile-pricing -->
+          </article>
+        </li>
 
-                <picture class="product-tile-image">
+        <li>
+          <article class="product-tile">
+            <header class="product-tile-header">
+              <a
+                href="/"
+                class="favorite"
+                title="favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+
+              <picture class="product-tile-image">
+                <a
+                  href="/"
+                  class="product-page"
+                  title="product-page"
+                >
                   <img
                     src="images/Monochrome watch 02.png"
                     alt="Monochrome"
                   >
-                </picture>
-                <!-- product-image -->
+              </picture>
+              <!-- product-image -->
 
-                <h1 class="product-tile-title">
-                  Monochrome</a>
-                </h1>
-                <!-- product-title -->
+              <h1 class="product-tile-title">
+                Monochrome</a>
+              </h1>
+              <!-- product-title -->
 
-                <section class="product-tile-pricing">
-                  <span class="product-price">$425</span>
-                </section>
-                <!-- ./product-tile-pricing -->
-            </article>
-          </li>
+              <section class="product-tile-pricing">
+                <span class="product-price">$425</span>
+              </section>
+              <!-- ./product-tile-pricing -->
+          </article>
+        </li>
 
-          <li>
-            <article class="product-tile">
-              <header class="product-tile-header">
-                <footer class="product-tile-controls">
-                  <a
-                    href="/"
-                    class="favorite"
-                    title="favorite"
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </footer>
-                <!-- ./product-tile-controls -->
+        <li>
+          <article class="product-tile">
+            <header class="product-tile-header">
+              <a
+                href="/"
+                class="favorite"
+                title="favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
 
-                <picture class="product-tile-image">
+              <picture class="product-tile-image">
+                <a
+                  href="/"
+                  class="product-page"
+                  title="product-page"
+                >
                   <img
                     src="images/Monochrome watch 03.png"
                     alt="Monochrome"
                   >
-                </picture>
-                <!-- product-image -->
+              </picture>
+              <!-- product-image -->
 
-                <h1 class="product-tile-title">
-                  Monochrome</a>
-                </h1>
-                <!-- product-title -->
+              <h1 class="product-tile-title">
+                Monochrome</a>
+              </h1>
+              <!-- product-title -->
 
-                <section class="product-tile-pricing">
-                  <span class="product-price">$425</span>
-                </section>
-                <!-- ./product-tile-pricing -->
-            </article>
-          </li>
+              <section class="product-tile-pricing">
+                <span class="product-price">$425</span>
+              </section>
+              <!-- ./product-tile-pricing -->
+          </article>
+        </li>
 
-          <li>
-            <article class="product-tile">
-              <header class="product-tile-header">
-                <footer class="product-tile-controls">
-                  <a
-                    href="/"
-                    class="favorite"
-                    title="favorite"
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </footer>
-                <!-- ./product-tile-controls -->
+        <li>
+          <article class="product-tile">
+            <header class="product-tile-header">
+              <a
+                href="/"
+                class="favorite"
+                title="favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
 
-                <picture class="product-tile-image">
+              <picture class="product-tile-image">
+                <a
+                  href="/"
+                  class="product-page"
+                  title="product-page"
+                >
                   <img
                     src="images/Monochrome watch 04.png"
                     alt="Monochrome"
                   >
-                </picture>
-                <!-- product-image -->
+              </picture>
+              <!-- product-image -->
 
-                <h1 class="product-tile-title">
-                  Monochrome</a>
-                </h1>
-                <!-- product-title -->
+              <h1 class="product-tile-title">
+                Monochrome</a>
+              </h1>
+              <!-- product-title -->
 
-                <section class="product-tile-pricing">
-                  <span class="product-price">$425</span>
-                </section>
-                <!-- ./product-tile-pricing -->
-            </article>
-          </li>
-        </ul>
+              <section class="product-tile-pricing">
+                <span class="product-price">$425</span>
+              </section>
+              <!-- ./product-tile-pricing -->
+          </article>
+        </li>
+      </ul>
+    </section>
 
-        <header>
-          <h1>Most Loved</h1>
-        </header>
+    <section class="home-catalog-preview">
 
-        <ul class="product-tiles">
-          <li>
-            <article class="product-tile">
-              <header class="product-tile-header">
-                <footer class="product-tile-controls">
-                  <a
-                    href="/"
-                    class="favorite"
-                    title="favorite"
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </footer>
-                <!-- ./product-tile-controls -->
+      <header>
+        <h1>Most Loved</h1>
+      </header>
 
-                <picture class="product-tile-image">
+      <ul class="product-tiles">
+        <li>
+          <article class="product-tile">
+            <header class="product-tile-header">
+              <a
+                href="/"
+                class="favorite"
+                title="favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+
+              <picture class="product-tile-image">
+                <a
+                  href="/"
+                  class="product-page"
+                  title="product-page"
+                >
                   <img
                     src="images/Monochrome watch 04.png"
                     alt="Monochrome"
                   >
-                </picture>
-                <!-- product-image -->
+              </picture>
+              <!-- product-image -->
 
-                <h1 class="product-tile-title">
-                  Monochrome</a>
-                </h1>
-                <!-- product-title -->
+              <h1 class="product-tile-title">
+                Monochrome</a>
+              </h1>
+              <!-- product-title -->
 
-                <section class="product-tile-pricing">
-                  <span class="product-price">$425</span>
-                </section>
-                <!-- ./product-tile-pricing -->
-            </article>
-          </li>
+              <section class="product-tile-pricing">
+                <span class="product-price">$425</span>
+              </section>
+              <!-- ./product-tile-pricing -->
+          </article>
+        </li>
 
-          <li>
-            <article class="product-tile">
-              <header class="product-tile-header">
-                <footer class="product-tile-controls">
-                  <a
-                    href="/"
-                    class="favorite"
-                    title="favorite"
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </footer>
-                <!-- ./product-tile-controls -->
+        <li>
+          <article class="product-tile">
+            <header class="product-tile-header">
+              <a
+                href="/"
+                class="favorite"
+                title="favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
 
-                <picture class="product-tile-image">
+              <picture class="product-tile-image">
+                <a
+                  href="/"
+                  class="product-page"
+                  title="product-page"
+                >
                   <img
                     src="images/Monochrome watch 01.png"
                     alt="Monochrome"
                   >
-                </picture>
-                <!-- product-image -->
+              </picture>
+              <!-- product-image -->
 
-                <h1 class="product-tile-title">
-                  Monochrome</a>
-                </h1>
-                <!-- product-title -->
+              <h1 class="product-tile-title">
+                Monochrome</a>
+              </h1>
+              <!-- product-title -->
 
-                <section class="product-tile-pricing">
-                  <span class="product-price">$425</span>
-                </section>
-                <!-- ./product-tile-pricing -->
-            </article>
-          </li>
+              <section class="product-tile-pricing">
+                <span class="product-price">$425</span>
+              </section>
+              <!-- ./product-tile-pricing -->
+          </article>
+        </li>
 
-          <li>
-            <article class="product-tile">
-              <header class="product-tile-header">
-                <footer class="product-tile-controls">
-                  <a
-                    href="/"
-                    class="favorite"
-                    title="favorite"
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </footer>
-                <!-- ./product-tile-controls -->
+        <li>
+          <article class="product-tile">
+            <header class="product-tile-header">
+              <a
+                href="/"
+                class="favorite"
+                title="favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
 
-                <picture class="product-tile-image">
+              <picture class="product-tile-image">
+                <a
+                  href="/"
+                  class="product-page"
+                  title="product-page"
+                >
                   <img
                     src="images/Monochrome watch 03.png"
                     alt="Monochrome"
                   >
-                </picture>
-                <!-- product-image -->
+              </picture>
+              <!-- product-image -->
 
-                <h1 class="product-tile-title">
-                  Monochrome</a>
-                </h1>
-                <!-- product-title -->
+              <h1 class="product-tile-title">
+                Monochrome</a>
+              </h1>
+              <!-- product-title -->
 
-                <section class="product-tile-pricing">
-                  <span class="product-price">$425</span>
-                </section>
-                <!-- ./product-tile-pricing -->
-            </article>
-          </li>
+              <section class="product-tile-pricing">
+                <span class="product-price">$425</span>
+              </section>
+              <!-- ./product-tile-pricing -->
+          </article>
+        </li>
 
-          <li>
-            <article class="product-tile">
-              <header class="product-tile-header">
-                <footer class="product-tile-controls">
-                  <a
-                    href="/"
-                    class="favorite"
-                    title="favorite"
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </footer>
-                <!-- ./product-tile-controls -->
+        <li>
+          <article class="product-tile">
+            <header class="product-tile-header">
+              <a
+                href="/"
+                class="favorite"
+                title="favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
 
-                <picture class="product-tile-image">
+              <picture class="product-tile-image">
+                <a
+                  href="/"
+                  class="product-page"
+                  title="product-page"
+                >
                   <img
                     src="images/Monochrome watch 08.png"
                     alt="Monochrome"
                   >
-                </picture>
-                <!-- product-image -->
+              </picture>
+              <!-- product-image -->
 
-                <h1 class="product-tile-title">
-                  Monochrome</a>
-                </h1>
-                <!-- product-title -->
+              <h1 class="product-tile-title">
+                Monochrome</a>
+              </h1>
+              <!-- product-title -->
 
-                <section class="product-tile-pricing">
-                  <span class="product-price">$425</span>
-                </section>
-                <!-- ./product-tile-pricing -->
-            </article>
-          </li>
-        </ul>
-      </section>
+              <section class="product-tile-pricing">
+                <span class="product-price">$425</span>
+              </section>
+              <!-- ./product-tile-pricing -->
+          </article>
+        </li>
+      </ul>
+    </section>
 
-      <section class="home-content container">
-        <aside>
-          <img
-            src="images/Display watch and phone.png"
-            alt="Display watches and phone near macbook"
-          >
-        </aside>
+    <section class="home-content">
+      <aside>
+        <img
+          src="images/Display watch and phone.png"
+          alt="Display watches and phone near macbook"
+        >
+      </aside>
 
-        <div class="home-content-copy">
-          <header>
-            <h1>Watches for entrepreneurs</h1>
-          </header>
-
-          <p>
-            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-            will give you a complete account of the system, and expound the actual teachings of the great explorer of
-            the
-            truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because.
-          </p>
-
-          <p>
-            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I
-            will give you a complete account of the system, and expound the actual teachings of the great explorer of
-            the
-            truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because.
-          </p>
-        </div>
-      </section>
-
-      <section class="catalog-preview">
+      <div class="home-content-copy">
         <header>
-          <h1>Men's</h1>
+          <h1>Watches for entrepreneurs</h1>
         </header>
 
-        <ul class="product-tiles">
-          <li>
-            <article class="product-tile">
-              <header class="product-tile-header">
-                <footer class="product-tile-controls">
-                  <a
-                    href="/"
-                    class="favorite"
-                    title="favorite"
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </footer>
-                <!-- ./product-tile-controls -->
+        <p>
+          But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+          and I
+          will give you a complete account of the system, and expound the actual teachings of the great explorer
+          of
+          the
+          truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+          because.
+        </p>
 
-                <picture class="product-tile-image">
+        <p>
+          But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born
+          and I
+          will give you a complete account of the system, and expound the actual teachings of the great explorer
+          of
+          the
+          truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself,
+          because.
+        </p>
+      </div>
+    </section>
+
+    <section class="home-catalog-preview">
+      <header>
+        <h1>Men's</h1>
+      </header>
+
+      <ul class="product-tiles">
+        <li>
+          <article class="product-tile">
+            <header class="product-tile-header">
+              <a
+                href="/"
+                class="favorite"
+                title="favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
+
+              <picture class="product-tile-image">
+                <a
+                  href="/"
+                  class="product-page"
+                  title="product-page"
+                >
                   <img
                     src="images/Monochrome watch 08.png"
                     alt="Monochrome"
                   >
-                </picture>
-                <!-- product-image -->
+              </picture>
+              <!-- product-image -->
 
-                <h1 class="product-tile-title">
-                  Monochrome</a>
-                </h1>
-                <!-- product-title -->
+              <h1 class="product-tile-title">
+                Monochrome</a>
+              </h1>
+              <!-- product-title -->
 
-                <section class="product-tile-pricing">
-                  <span class="product-price">$425</span>
-                </section>
-                <!-- ./product-tile-pricing -->
-            </article>
-          </li>
+              <section class="product-tile-pricing">
+                <span class="product-price">$425</span>
+              </section>
+              <!-- ./product-tile-pricing -->
+          </article>
+        </li>
 
-          <li>
-            <article class="product-tile">
-              <header class="product-tile-header">
-                <footer class="product-tile-controls">
-                  <a
-                    href="/"
-                    class="favorite"
-                    title="favorite"
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </footer>
-                <!-- ./product-tile-controls -->
+        <li>
+          <article class="product-tile">
+            <header class="product-tile-header">
+              <a
+                href="/"
+                class="favorite"
+                title="favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
 
-                <picture class="product-tile-image">
+              <picture class="product-tile-image">
+                <a
+                  href="/"
+                  class="product-page"
+                  title="product-page"
+                >
                   <img
                     src="images/Monochrome watch 10.png"
                     alt="Monochrome"
                   >
-                </picture>
-                <!-- product-image -->
+              </picture>
+              <!-- product-image -->
 
-                <h1 class="product-tile-title">
-                  Monochrome</a>
-                </h1>
-                <!-- product-title -->
+              <h1 class="product-tile-title">
+                Monochrome</a>
+              </h1>
+              <!-- product-title -->
 
-                <section class="product-tile-pricing">
-                  <span class="product-price">$425</span>
-                </section>
-                <!-- ./product-tile-pricing -->
-            </article>
-          </li>
+              <section class="product-tile-pricing">
+                <span class="product-price">$425</span>
+              </section>
+              <!-- ./product-tile-pricing -->
+          </article>
+        </li>
 
-          <li>
-            <article class="product-tile">
-              <header class="product-tile-header">
-                <footer class="product-tile-controls">
-                  <a
-                    href="/"
-                    class="favorite"
-                    title="favorite"
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </footer>
-                <!-- ./product-tile-controls -->
+        <li>
+          <article class="product-tile">
+            <header class="product-tile-header">
+              <a
+                href="/"
+                class="favorite"
+                title="favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
 
-                <picture class="product-tile-image">
+              <picture class="product-tile-image">
+                <a
+                  href="/"
+                  class="product-page"
+                  title="product-page"
+                >
                   <img
                     src="images/Monochrome watch 11.png"
                     alt="Monochrome"
                   >
-                </picture>
-                <!-- product-image -->
+              </picture>
+              <!-- product-image -->
 
-                <h1 class="product-tile-title">
-                  Monochrome</a>
-                </h1>
-                <!-- product-title -->
+              <h1 class="product-tile-title">
+                Monochrome</a>
+              </h1>
+              <!-- product-title -->
 
-                <section class="product-tile-pricing">
-                  <span class="product-price">$425</span>
-                </section>
-                <!-- ./product-tile-pricing -->
-            </article>
-          </li>
+              <section class="product-tile-pricing">
+                <span class="product-price">$425</span>
+              </section>
+              <!-- ./product-tile-pricing -->
+          </article>
+        </li>
 
-          <li>
-            <article class="product-tile">
-              <header class="product-tile-header">
-                <footer class="product-tile-controls">
-                  <a
-                    href="/"
-                    class="favorite"
-                    title="favorite"
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </footer>
-                <!-- ./product-tile-controls -->
+        <li>
+          <article class="product-tile">
+            <header class="product-tile-header">
+              <a
+                href="/"
+                class="favorite"
+                title="favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
 
-                <picture class="product-tile-image">
+              <picture class="product-tile-image">
+                <a
+                  href="/"
+                  class="product-page"
+                  title="product-page"
+                >
                   <img
                     src="images/Monochrome watch 12.png"
                     alt="Monochrome"
                   >
-                </picture>
-                <!-- product-image -->
+              </picture>
+              <!-- product-image -->
 
-                <h1 class="product-tile-title">
-                  Monochrome</a>
-                </h1>
-                <!-- product-title -->
+              <h1 class="product-tile-title">
+                Monochrome</a>
+              </h1>
+              <!-- product-title -->
 
-                <section class="product-tile-pricing">
-                  <span class="product-price">$425</span>
-                </section>
-                <!-- ./product-tile-pricing -->
-            </article>
-          </li>
-        </ul>
+              <section class="product-tile-pricing">
+                <span class="product-price">$425</span>
+              </section>
+              <!-- ./product-tile-pricing -->
+          </article>
+        </li>
+      </ul>
+    </section>
 
-        <section class="catalog-ctas">
-          <a
-            href="/"
-            class="btn"
-            title="View all"
-          >view all</a>
-        </section>
+    <section class="catalog-ctas">
+      <a
+        href="/"
+        class="btn"
+        title="View all"
+      >view all</a>
+    </section>
 
-        <header>
-          <h1>Women's</h1>
-        </header>
+    <section class="home-catalog-preview">
+      <header>
+        <h1>Women's</h1>
+      </header>
 
-        <ul class="product-tiles">
-          <li>
-            <article class="product-tile">
-              <header class="product-tile-header">
-                <footer class="product-tile-controls">
-                  <a
-                    href="/"
-                    class="favorite"
-                    title="favorite"
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </footer>
-                <!-- ./product-tile-controls -->
+      <ul class="product-tiles">
+        <li>
+          <article class="product-tile">
+            <header class="product-tile-header">
+              <a
+                href="/"
+                class="favorite"
+                title="favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
 
-                <picture class="product-tile-image">
+              <picture class="product-tile-image">
+                <a
+                  href="/"
+                  class="product-page"
+                  title="product-page"
+                >
                   <img
                     src="images/Monochrome watch 04.png"
                     alt="Monochrome"
                   >
-                </picture>
-                <!-- product-image -->
+              </picture>
+              <!-- product-image -->
 
-                <h1 class="product-tile-title">
-                  Monochrome</a>
-                </h1>
-                <!-- product-title -->
+              <h1 class="product-tile-title">
+                Monochrome</a>
+              </h1>
+              <!-- product-title -->
 
-                <section class="product-tile-pricing">
-                  <span class="product-price">$425</span>
-                </section>
-                <!-- ./product-tile-pricing -->
-            </article>
-          </li>
+              <section class="product-tile-pricing">
+                <span class="product-price">$425</span>
+              </section>
+              <!-- ./product-tile-pricing -->
+          </article>
+        </li>
 
-          <li>
-            <article class="product-tile">
-              <header class="product-tile-header">
-                <footer class="product-tile-controls">
-                  <a
-                    href="/"
-                    class="favorite"
-                    title="favorite"
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </footer>
-                <!-- ./product-tile-controls -->
+        <li>
+          <article class="product-tile">
+            <header class="product-tile-header">
+              <a
+                href="/"
+                class="favorite"
+                title="favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
 
-                <picture class="product-tile-image">
+              <picture class="product-tile-image">
+                <a
+                  href="/"
+                  class="product-page"
+                  title="product-page"
+                >
                   <img
                     src="images/Monochrome watch 06.png"
                     alt="Monochrome"
                   >
-                </picture>
-                <!-- product-image -->
+              </picture>
+              <!-- product-image -->
 
-                <h1 class="product-tile-title">
-                  Monochrome</a>
-                </h1>
-                <!-- product-title -->
+              <h1 class="product-tile-title">
+                Monochrome</a>
+              </h1>
+              <!-- product-title -->
 
-                <section class="product-tile-pricing">
-                  <span class="product-price">$425</span>
-                </section>
-                <!-- ./product-tile-pricing -->
-            </article>
-          </li>
+              <section class="product-tile-pricing">
+                <span class="product-price">$425</span>
+              </section>
+              <!-- ./product-tile-pricing -->
+          </article>
+        </li>
 
-          <li>
-            <article class="product-tile">
-              <header class="product-tile-header">
-                <footer class="product-tile-controls">
-                  <a
-                    href="/"
-                    class="favorite"
-                    title="favorite"
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </footer>
-                <!-- ./product-tile-controls -->
+        <li>
+          <article class="product-tile">
+            <header class="product-tile-header">
+              <a
+                href="/"
+                class="favorite"
+                title="favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
 
-                <picture class="product-tile-image">
+              <picture class="product-tile-image">
+                <a
+                  href="/"
+                  class="product-page"
+                  title="product-page"
+                >
                   <img
                     src="images/Monochrome watch 15.png"
                     alt="Monochrome"
                   >
-                </picture>
-                <!-- product-image -->
+              </picture>
+              <!-- product-image -->
 
-                <h1 class="product-tile-title">
-                  Monochrome</a>
-                </h1>
-                <!-- product-title -->
+              <h1 class="product-tile-title">
+                Monochrome</a>
+              </h1>
+              <!-- product-title -->
 
-                <section class="product-tile-pricing">
-                  <span class="product-price">$425</span>
-                </section>
-                <!-- ./product-tile-pricing -->
-            </article>
-          </li>
+              <section class="product-tile-pricing">
+                <span class="product-price">$425</span>
+              </section>
+              <!-- ./product-tile-pricing -->
+          </article>
+        </li>
 
-          <li>
-            <article class="product-tile">
-              <header class="product-tile-header">
-                <footer class="product-tile-controls">
-                  <a
-                    href="/"
-                    class="favorite"
-                    title="favorite"
-                  >
-                    <i class="fa-regular fa-heart"></i>
-                  </a>
-                </footer>
-                <!-- ./product-tile-controls -->
+        <li>
+          <article class="product-tile">
+            <header class="product-tile-header">
+              <a
+                href="/"
+                class="favorite"
+                title="favorite"
+              >
+                <i class="fa-regular fa-heart"></i>
+              </a>
 
-                <picture class="product-tile-image">
+              <picture class="product-tile-image">
+                <a
+                  href="/"
+                  class="product-page"
+                  title="product-page"
+                >
                   <img
                     src="images/Monochrome watch 16.png"
                     alt="Monochrome"
                   >
-                </picture>
-                <!-- product-image -->
+              </picture>
+              <!-- product-image -->
 
-                <h1 class="product-tile-title">
-                  Monochrome</a>
-                </h1>
-                <!-- product-title -->
+              <h1 class="product-tile-title">
+                Monochrome</a>
+              </h1>
+              <!-- product-title -->
 
-                <section class="product-tile-pricing">
-                  <span class="product-price">$425</span>
-                </section>
-                <!-- ./product-tile-pricing -->
-            </article>
-          </li>
-        </ul>
+              <section class="product-tile-pricing">
+                <span class="product-price">$425</span>
+              </section>
+              <!-- ./product-tile-pricing -->
+          </article>
+        </li>
+      </ul>
 
-        <section class="catalog-ctas">
-          <a
-            href="/"
-            class="btn"
-            title="View all"
-          >view all</a>
-        </section>
-    </div>
+    </section>
+
+    <section class="catalog-ctas">
+      <a
+        href="/"
+        class="btn"
+        title="View all"
+      >view all</a>
+    </section>
   </main>
 
   <footer class="footer">
@@ -822,9 +872,19 @@
       <section class="footer-contact">
         <ul>
           <li>
-            <a href="tel:+44 (0)10 2345 6789">call us +44 (0)10 2345 6789</a>
+            <a
+              href="tel:+44 (0)10 2345 6789"
+              title="call us"
+            >call us</a>
           </li>
-          <a href="mailto:customercare@yahoo.com">email customer care</a>
+          <li> <a
+              href="tel:+44 (0)10 2345 6789"
+              title="call us"
+            > +44 (0)10 2345 6789</a> </li>
+          <a
+            href="mailto:customercare@yahoo.com"
+            title="email customer care"
+          >email customer care</a>
           </li>
         </ul>
       </section>
@@ -899,7 +959,7 @@
               for="subscribe"
               title="Sign up for our newsletter"
               class="form-label"
-            >Sign up for our newsletter</label>
+            >sign up for our newsletter</label>
 
             <input
               type="email"
@@ -908,9 +968,18 @@
               placeholder="Your email"
             >
 
+            <input
+              type="checkbox"
+              name="gdpr-consent"
+              id="gdpr-consent"
+              required
+            >
+            <label for="gdpr-consent">I agree with Privacy Policy and I want to receive emails from Monochrome
+            </label>
+
             <button
               type="submit"
-              title="Sign up for our newsletter"
+              title="sign up for our newsletter"
               class="form-btn"
             >Submit</button>
           </form>
@@ -967,7 +1036,5 @@
       </section>
     </div>
   </footer>
-
-
 
 </body>
